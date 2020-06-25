@@ -1,111 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style type="text/css">
- tr,td,th{
-  
-     border : 1.5px solid;
-     width: 300px;
-     padding: 20px;
-}
-#v1
-{
-  padding:10px;
+<title>VelJothi Offset Printers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
 
 }
-.column {
+
+body {
+  margin: 0;
+  background-image: url("1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  text-align:  center;
+}
+
+
+.topnav a{	
+
+	float: left;
+	display: block;
+  color: #f2f2f2;
+  /*color: red;*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*.footer {
+	position: relative;
+	bottom: 0px;
+background-color: #F1F1F1;
+  text-align: center;
+  padding: 1px;
+   margin-bottom: 20px;
+}
+*/
+#container {
+    position: absolute;
+	bottom: 0px;
+} 
+.columnleft {
   float: left;
-  width: 33.33%;
-  padding: 5px;
+  padding: 10px;
+  padding-bottom: 10px;
+  width:50%;
+  height: 50%
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+/* Left and right column */
+.columnright {
+  float:right;
+  width: 50%;
+  height: 50%
+  padding-bottom:10px;
 }
-</style>	
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) 
+{
+.columnleft, .columnright {
+   width: 100%;
+   height:100%;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
 </head>
 <body>
-	<table style="width:1380px";	bgcolor="#F9FF33";>
-	<tr>
-		<center>
-		<th> VELJOTHI OFFSET PRINTERS</th>
-	</center>
-	</tr>
-</table>
-<table>
-	<tr style="background-color: red">
 
-    <th>Sheets</th>
-    <th>1 color</th>
-    <th>2 color</th>
-    <th>3 color</th>
-  </tr>
-  <tr>
-    <td>A4sheet</td>
-    <td>100</td>
-    <td>200</td>
-    <td>300</td>
-  </tr>
-  <tr>
-    <td>A3sheet</td>
-    <td>200</td>
-    <td>300</td>
-      <td>400</td>
-  </tr>
-  <tr>
-    <td>A5sheet</td>
-    <td>200</td>
-    <td>300</td>
-      <td>500</td>
-  </tr>
+<div class="header">
+  <h1>VelJothi Offset printers</h1>
+</div>
 
-  <tr style="background-color: red">
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
 
-    <th>Paper</th>
-    <th>100</th>
-    <th>200</th>
-    <th>300</th>
-  </tr>
-  <tr>
-    <td>P1</td>
-    <td>100</td>
-    <td>200</td>
-    <td>300</td>
-  </tr>
-  <tr>
-    <td>P2</td>
-    <td>200</td>
-    <td>300</td>
-      <td>400</td>
-  </tr>
-  <tr>
-    <td>P3</td>
-    <td>200</td>
-    <td>300</td>
-      <td>500</td>
-  </tr>
-</table>
 <div class="row">
-  <div  class="column">
-    <td>
-<img width="600" height="300"src="print.png" alt="description here" />
-</td></div>
-
-<div  class="column" style="padding-left: 370px; padding-top: 20px;">
-  <table>
-<tr>    
-  <td>Name: Sakthivel  <br />
-    Mailid: veljothioffset@gmail.com <br />
-    Phoneno: 9843479405 <br />
-  </td>
+<div class="columnleft">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
   
+  <div class="columnright">
+    <h2>Main Content</h2>
+    <div class="flex-container">
+    <!-- 	<div><img src="books.jpg"></div>
+    	<div><img src="book1.jpg"></div>
+    	<div><img src="print.jpg"></div> -->
+    	<div>1</div>
+    	<div>2</div>
+    	<div>3</div> <br />
+    	<div>1</div>
+    	<div>2</div>
+    	<div>3</div> <br />
+    	<div>1</div>
+    	<div>2</div>
+    	<div>3</div>
+    </div>
+  </div>
+</div>
+<table id="container">
+        <tr>
+ <td valign="bottom">
+<div id="footer">
+	<center>
+		
+  <h1 style="text-align: center;">Copyrights @ VelJothi Offset printers</h1>
+
+	</center>
+</div>
+</td>
 </tr>
- 
-</table>
-</div>
-</div>
 </body>
 </html>
