@@ -1,182 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 <style type="text/css">
-
-* {
-  box-sizing: border-box;
-
+body{
+	background:#AEE4FF;
+}
+.form-style-10{
+	max-width:450px;
+	padding:30px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+	padding: 30px;
+	background: #F8F8F8;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.form-style-10 h1{
+	background: #2A88AD;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span{
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+	display: block;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #888;
+	margin-bottom: 15px;
+}
+.form-style-10 input[type="text"],
+.form-style-10 input[type="date"],
+.form-style-10 input[type="datetime"],
+.form-style-10 input[type="email"],
+.form-style-10 input[type="number"],
+.form-style-10 input[type="search"],
+.form-style-10 input[type="time"],
+.form-style-10 input[type="url"],
+.form-style-10 input[type="password"],
+.form-style-10 textarea,
+.form-style-10 select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
 
-body {
-  margin: 0;
-  background-image: url("i1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+.form-style-10 .section{
+	font: normal 20px 'Bitter', serif;
+	color: #2A88AD;
+	margin-bottom: 5px;
 }
-
-/* Style the header */
-.header {
-  background-color: #F4C125;
-  padding: 20px;
-  text-align: center;
+.form-style-10 .section span {
+	background: #2A88AD;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
 }
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  text-align:  center;
+.form-style-10 input[type="button"], 
+.form-style-10 input[type="submit"]{
+	background: #2A88AD;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 15px;
 }
-
-
-.topnav a{  
-
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  /*color: red;*/
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.form-style-10 input[type="button"]:hover, 
+.form-style-10 input[type="submit"]:hover{
+	background: #2A6881;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 }
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.footer {
-  
-background-color: #F1F1F1;
-  text-align: center;
-  padding: 10px;
-   
-}
-
-
-.columnleft {
-  float: left;
-  padding: 10px;
-  padding-bottom: 10px;
-  width:50%;
-  height: 50%
-}
-
-/* Left and right column */
-.columnright {
-  float:right;
-  width: 50%;
-  height: 50%
-  padding-bottom:10px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) 
-{
-.columnleft, .columnright {
-   width: 100%;
-   height:100%;
-  }
-}
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-  /* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-      position: relative;
-    top: 10px;
-
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.8;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-instagram {
-  background: #F49525;
-  color: white;
+.form-style-10 .privacy-policy{
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	margin-top: 10px;
+	text-align: right;
 }
 </style>
-
 </head>
 <body>
-  <div class="header">
-  <h1>VelJothi Offset printers</h1>
-</div>
+	
 
-<div class="topnav">
-  <a href="ORDER">HOME</a>
-  <a href="ABOUT">ORDER</a>
-  <a href="#">ABOUT US</a>
-</div>
-
-<div class="row">
-<div class="columnleft">
-    <h2>Welcome to our website</h2>
-  </div>
-  
-  <div class="columnright">
-    <h2>Main Content</h2>
-    <div class="flex-container">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div> <br />
-      <div>1</div>
-      <div>2</div>
-      <div>3</div> <br />
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+<div class="form-style-10">
+<h1>Sign Up Now!<span>Sign up and tell us what you think of the site!</span></h1>
+<form action="boot.html" method="post">
+    <div class="section"><span>1</span>First Name &amp; Address</div>
+    <div class="inner-wrap">
+        <label>Your Full Name <input type="text" name="field1" /></label>
+        <label> Company Address <textarea name="field2"></textarea></label>
     </div>
-  </div>
-</div>
 
-<div class="footer">
-  <center>
-    
-  <h1 style="text-align: center;">Copyrights @ VelJothi Offset printers</h1>
-<div>
-  <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-instagram"></a>
-  
-  </div>
+    <div class="section"><span>2</span>Email &amp; Phone</div>
+    <div class="inner-wrap">
+        <label>Email Address <input type="email" name="field3" /></label>
+        <label>Phone Number <input type="text" name="field4" /></label>
+    </div>
 
-  </center>
-</div>
-  </body>
+    <div class="section"><span>3</span>Passwords</div>
+        <div class="inner-wrap">
+        <label>Password <input type="password" name="field5" /></label>
+        <label>Confirm Password <input type="password" name="field6" /></label>
+    </div>
+    <div class="button-section">
+     <input type="submit" name="Sign Up" />
+     <span class="privacy-policy">
+     <input type="checkbox" name="field7">You agree to our Terms and Policy. 
+     </span>
+    </div>
+
+</form>
+</body>
 </html>
