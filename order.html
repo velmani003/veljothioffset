@@ -1,36 +1,68 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+body {
+  background: #BFA2E1;
+}
+
+.form-group
+ {
+  width: 500px;
+  clear: both;
+  margin-left: 30%;
+}
+
+.form-group input {
+  width: 100%;
+  clear: both;
+  top
+}
+}
+
+</style>
 
 </head>
 <body>
-	<form action="amountdetailes.html" method="post"></form>
- <label for="fname">Name:</label><br><br>
-  <input type="textbox" id="fname" name="fname"><br><br>
-  <label for="lname">Company name</label><br><br>
-  <input type="textbox" id="lname" name="lname"><br><br>
-<lable> Choose machine</lable><br>
-<label class="container">One color
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">Two color
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">Three color
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label><br>
-<label>Choose papers</lable><br>
-<input type="radio" id="Thick paper" name="paper" value="Thick paper">
-  <label for="Thick paper">Paper</label><br>
-  <input type="radio" id="350-gsm paper" name="350-gsm paper" value="350-gsm paper">
-  <label for="350-gsm paper">350-gsm paper</label><br>
-    <input type="radio" id="90-gsm paper" name="90-gsm paper" value="90-gsm paper">
-  <label for="90-gsm paper">90-gsm paper</label><br>
-    <input type="radio" id="170-gsm paper" name="170-gsm paper" value="170-gsm paper">
-  <label for="170-gsm paper">170-gsm paper</label><br>
+  <div >
+	<form action="about.hmtl" method="post">
+  <div class="form-group">
+
+    <label for="uname">Username:</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" >
+
+    <label for="cname">Company name</label>
+    <input type="cname" class="form-control" id="cname" placeholder="Enter Companyname" name="cname">
+
+  <div class="form-check-inline">
+ <span><label class="form-check-label">Choose machine
+    <input type="checkbox" class="form-check-input" value="">one color
+    <input type="checkbox" class="form-check-input" value="">two color
+    <input type="checkbox" class="form-check-input" value="">three color
+  </label></span>
+</div><br><br>
+<div class="form-check-inline">
+  <label class="form-check-label">Choose paper
+    <input type="radio" class="form-check-input" name="optradio">Thick paper
+    <input type="radio" class="form-check-input" name="optradio">350gsm paper
+    <input type="radio" class="form-check-input" name="optradio">90gsm paper
+  </label>
+</div><br /><br>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember" required> I agree 
+  </label>
+  </div><br>
+  <button type="submit" class="btn btn-primary">Confirm order</button>
+</div></div>
+</form>
 </body>
 </html>
